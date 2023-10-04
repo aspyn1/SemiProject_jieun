@@ -165,7 +165,7 @@ main {
 /* main - content - main-content - content-title */
 #content-title{
     font-size: 15px;
-    padding: 5px;
+    padding: 5px 20px;
     
     display: flex;
     align-items: center;
@@ -175,6 +175,7 @@ main {
 /* main - content - main-content - content-option */
 #content-option{
     display: flex;
+    padding: 0px 5px;
 }
 
 #content-option > button{
