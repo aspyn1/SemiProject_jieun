@@ -113,168 +113,119 @@ main {
 
 
 /* main - content - main-content */
-
 .main-content{
-    height: 70%;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 50px;
+    flex-basis: 100%;
+    padding: 30px 0;
 }
 
-.main-content > div{
+.main-content-left, .main-content-right{
+    flex-basis: 27%;
+}
+
+.main-content-main{
+    flex-basis: 46%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content div{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-#content-number :first-child, #content-writer :first-child, #content-title :first-child,
-#content-date :first-child, #content-hits :first-child{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#content-number{
-    flex-basis: 10vw;
-}
-
-#content-writer{
-    flex-basis: 13vw;
 }
 
 
+/********************/
 #content-title{
-    flex-basis: 60vw;
+    flex-basis: 6%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
+    border-radius: 10px;
 }
 
-#content-date{
-    flex-basis: 12vw;
+#content-option{
+    flex-basis: 5%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
+    border-radius: 10px;
 }
 
-#content-hits{
-    flex-basis: 10vw;
+#content-text{
+    flex-basis: 79%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
+    border-radius: 10px;
 }
 
-#content-number > div:not(#content-number-title),
-#content-writer > div:not(#content-writer-title),
-#content-title > div:not(#content-title-title),
-#content-date > div:not(#content-date-title),
-#content-hits > div:not(#content-hits-title){
-    border: 0.5px solid black;
+#content-modifybutton{
+    flex-basis: 10%;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* main - content - main-content - content-title */
+#content-title{
+    font-size: 15px;
+    padding: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main - content - main-content - content-option */
+#content-option{
+    display: flex;
+}
+
+#content-option > button{
+    background-color: rgba(217, 217, 217, 0.44);
     border-radius: 5px;
-    height: 35px;
-    margin: 0 10px 10px 0;
-}
-
-#content-number > div:not(#content-number-title){
-    width: 100px;
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-writer > div:not(#content-writer-title){
-    width: 150px;    
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-title > div:not(#content-title-title){
-    width: 650px;
-
-    display: flex;
-    align-items: center;
-
-    padding-left: 10px;
-}
-
-#content-date > div:not(#content-date-title){
-    width: 135px;
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-hits > div:not(#content-hits-title){
-    width: 110px;
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* main - content - search */
-
-.search{
-    height: 10%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 12px;
-}
-
-#search-type{
-    height: 35px;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
-#search-word{
-    height: 35px;
-    width: 500px;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
-#writing{
-    height: 35px;
-    padding: 5px 10px;
-    margin: 0 5px;
-
-    border-radius: 5px;
-    background-color: #AC47FC;
-    color: white;
     border: none;
+
+    height: 30px;
+    width: 60px;
+
+    margin: 0 10px;
 }
 
-.index > button{
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-}
-
-
-/* main - content - index */
-
-.index{
-    height: 10%;
+/* main - content - main-content - content-text */
+#content-text{
+    font-size: 15px;
+    padding: 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 10px;
 }
 
+/* main - content - main-content - content-modifybutton */
+#content-modifybutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#registerButton{
+    margin: 0 10px; 
+    background-color: rgba(48, 68, 174, 0.5);
+
+    width: 80px;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;    
+}
+
+#cancelButton{
+    margin: 0 10px;
+    background-color: rgba(217, 217, 217, 0.44);
+
+    width: 80px;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;    
+}
 
 /* main-content-right */
 .right{
