@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="community_writing.css">
+    <link rel="stylesheet" href="oneOnOne_writing_admin.css">
 
-    <title>커뮤니티 글 자세히보기(본인이 쓴 글)</title>
+    <title>1:1문의 답변하기 (관리자 페이지)</title>
 </head>
 <body>
     <div class="container">
         <nav>
             <section class="logo">
                 <a href="http://192.168.120.16:5500/SemiDesign/main.html">
-                    <img src="img/logo.png">
+                    <img src="/jieun/img/logo.png">
                 </a>
             </section>
 
@@ -38,36 +38,37 @@
 
         <main>
             <div class="leftmenu">
-                <div>내가 쓴 글</div>
+                <div>정보수정</div>
+                <div>채팅함</div>
+                <div>1:1 문의 내역</div>
+                <div>내가 올린 매물 목록</div>
+                <div>허위매물 신고내역</div>
+                <div>공지사항</div>
             </div>
             <div class="content">
                 <div class="menutitle">
-                    자유 게시판
+                    1:1 문의하기
                 </div>
                 <div class="main-content">
                     <div class="main-content-left"></div>
                     <div class="main-content-main">
-                        <input id="content-title" placeholder="제목을 입력해주세요."></input>
-                        <div id="content-option">
-                             <button>글꼴</button>
-                             <button>크기</button>
-                             <button>정렬</button>
-                             <button>이미지</button>
-                             <button>동영상</button>
+                        <div id="content-info">
+                            <div>아이디</div>
+                            <div>2023-10-04</div>
                         </div>
-                        <input id="content-text" placeholder="내용을 입력해주세요."></input>                        
+                        <div id="content-title">제목</div>
+                        <div id="content-text">내용</div>
+                        <input id="content-comments" placeholder="문의에 대한 답변을 입력해주세요.">
                         <div id="content-modifybutton">
-                            <button id="registerButton">등록하기</button>
-                            <button id="cancelButton">취소</button>
+                            <button id="modifyButton">수정</button>
+                            <button id="deleteButton">목록으로</button>
                         </div>
                     </div>
                     <div class="main-content-right"></div> 
                 </div>
             </div>
             <div class="right">
-                <button id="bottom-nav-top">위로</button>
-                <button id="bottom-nav-list">목록</button>
-                <img src="img/chat_icon_final.png" id="chat-icon">
+                <img src="/jieun/img/chat_icon_final.png" id="chat-icon">
             </div>
         </main>
     </div>

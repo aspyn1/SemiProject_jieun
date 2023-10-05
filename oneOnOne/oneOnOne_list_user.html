@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="community_view_list.css">
+    <link rel="stylesheet" href="oneOnOne_list_user.css">
 
-    <title>내가 쓴 글 목록</title>    
+    <title>1:1문의내역 리스트(유저)</title>    
 </head>
 <body>
     <div class="container">
         <nav>
             <section class="logo">
                 <a href="http://192.168.120.16:5500/SemiDesign/main.html">
-                    <img src="logo.png">
+                    <img src="/jieun/img/logo.png">
                 </a>
             </section>
 
@@ -38,48 +38,31 @@
 
         <main>
             <div class="leftmenu">
-                <div>내가 쓴 글</div>
+                <div>정보수정</div>
+                <div>채팅함</div>
+                <div>1:1 문의 내역</div>
+                <div>내가 올린 매물 목록</div>
+                <div>허위매물 신고내역</div>
+                <div>공지사항</div>
             </div>
             <div class="content">
                 <div class="menutitle">
-                    내가 쓴 글 목록
+                    1:1 문의 내역
                 </div>
                 <div class="main-content">
-                    <div id="checkbox">
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>
-                        <div>
-                            <input type="checkbox" id="myCheckbox">
-                        </div>                        
-                    </div>
                     <div id="content-number">
                         <div id="content-number-title">번호</div>
                         <div>00001</div>
                         <div>00002</div>
                         <div>00003</div>
                         <div>00004</div>
-                        <div>00005</div>
                     </div>
                     <div id="content-title">
                         <div id="content-title-title">제목</div>
-                        <div>글 제목 1</div>
-                        <div>글 제목 2</div>
+                        <div>게시물 삭제처리는 어떻게하나요?</div>
+                        <div>매물을 추가로 올리려면 반드시 증명자료를 제출해야하나요?</div>
                         <div>글 제목 3</div>
                         <div>글 제목 4</div>
-                        <div>글 제목 5</div>
                     </div>
                     <div id="content-date">
                         <div id="content-date-title">등록일</div>
@@ -87,17 +70,21 @@
                         <div>2023-09-22</div>
                         <div>2023-09-22</div>
                         <div>2023-09-22</div>
-                        <div>2023-09-22</div>
-                    </div>                    
+                    </div>
+                    <div id="content-progress">
+                        <div id="content-progress-title">진행상황</div>
+                        <div id="ongoing">처리중</div>
+                        <div id="complete">답변완료</div>
+                        <div id="ongoing">처리중</div>
+                        <div id="complete">답변완료</div>
+                    </div>
                 </div>
-                <div class="main-content-bottom">
-                    <button>선택삭제</button>
+                <div class="search">
+                    <button id="writing">1:1 문의하기</button>
                 </div>
             </div>
             <div class="right">
-                <button id="bottom-nav-top">위로</button>
-                <button id="bottom-nav-list">목록</button>
-                <img src="img/chat_icon_final.png" id="chat-icon">
+                <img src="/jieun/img/chat_icon_final.png" id="chat-icon">
             </div>
         </main>
     </div>

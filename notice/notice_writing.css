@@ -113,119 +113,120 @@ main {
 
 
 /* main - content - main-content */
-
 .main-content{
-    height: 80%;
-
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    margin: 50px 150px;
+    flex-basis: 100%;
+    padding: 30px 0;
 }
 
-.main-content > div{
+.main-content-left, .main-content-right{
+    flex-basis: 27%;
+}
+
+.main-content-main{
+    flex-basis: 46%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.main-content div{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
 
-#content-number :first-child, #content-title :first-child,
-#content-date :first-child{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#checkbox{
-    flex-basis: 5vw;
-}
-
-#content-number{
-    flex-basis: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/********************/
 #content-title{
-    flex-basis: 73vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-date{
-    flex-basis: 12vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-number > div:not(#content-number-title),
-#content-title > div:not(#content-title-title),
-#content-date > div:not(#content-date-title){
-    border: 0.5px solid black;
-    border-radius: 5px;
-    height: 35px;
-    margin: 0 10px 10px 0;
-}
-
-#checkbox > input{
-    width: 25px;
-    height: 25px;
-
-    height: 35px;
-    margin: 0 10px 10px 0;
-}
-
-#content-number > div:not(#content-number-title){
-    width: 100px;
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content-title > div:not(#content-title-title){
-    width: 650px;
-
-    display: flex;
-    align-items: center;
-
-    padding-left: 10px;
-}
-
-#content-date > div:not(#content-date-title){
-    width: 135px;
-    background-color: rgba(217, 217, 217, 0.44);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* main-content-bottom */
-.main-content-bottom{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    height: 10%;
-}
-
-.main-content-bottom > button{
-    border: none;
+    flex-basis: 6%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
     border-radius: 10px;
-    height: 35px;
-    width: 70px;
-    background-color: rgba(48, 68, 174, 0.5);
 }
 
+#content-option{
+    flex-basis: 5%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
+    border-radius: 10px;
+}
+
+#content-text{
+    flex-basis: 79%;
+    margin: 5px;
+    padding: 5px;
+    border: 0.5px solid #CECECE;
+    border-radius: 10px;
+}
+
+#content-modifybutton{
+    flex-basis: 10%;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* main - content - main-content - content-title */
+#content-title{
+    font-size: 15px;
+    padding: 5px 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main - content - main-content - content-option */
+#content-option{
+    display: flex;
+    padding: 0px 5px;
+}
+
+#content-option > button{
+    background-color: rgba(217, 217, 217, 0.44);
+    border-radius: 5px;
+    border: none;
+
+    height: 30px;
+    width: 60px;
+
+    margin: 0 10px;
+}
+
+/* main - content - main-content - content-text */
+#content-text{
+    font-size: 15px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main - content - main-content - content-modifybutton */
+#content-modifybutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registerButton{
+    margin: 0 10px; 
+    background-color: rgba(48, 68, 174, 0.5);
+
+    width: 80px;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;    
+}
+
+#cancelButton{
+    margin: 0 10px;
+    background-color: rgba(217, 217, 217, 0.44);
+
+    width: 80px;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;    
+}
 
 /* main-content-right */
 .right{

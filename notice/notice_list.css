@@ -143,39 +143,48 @@ main {
 }
 
 #content-number{
-    flex-basis: 10vw;
+    width: 10%;
+    margin-right: 10px;
 }
 
 #content-writer{
-    flex-basis: 13vw;
+    width: 10%;
+    margin-right: 10px;
 }
 
-
 #content-title{
-    flex-basis: 60vw;
+    width: 55%;
+    margin-right: 10px;
 }
 
 #content-date{
-    flex-basis: 12vw;
+    width: 12%;
+    margin-right: 10px;
 }
 
 #content-hits{
-    flex-basis: 10vw;
+    width: 10%;
 }
 
 #content-number > div:not(#content-number-title),
 #content-writer > div:not(#content-writer-title),
-#content-title > div:not(#content-title-title),
 #content-date > div:not(#content-date-title),
 #content-hits > div:not(#content-hits-title){
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 0 5px 10px 5px;
+}
+
+#content-title > div:not(#content-title-title){
     border: 0.5px solid black;
     border-radius: 5px;
     height: 35px;
-    margin: 0 10px 10px 0;
+    margin: 0 5px 10px 5px;
 }
 
 #content-number > div:not(#content-number-title){
-    width: 100px;
+    width: 100%;
     background-color: rgba(217, 217, 217, 0.44);
 
     display: flex;
@@ -184,7 +193,7 @@ main {
 }
 
 #content-writer > div:not(#content-writer-title){
-    width: 150px;    
+    width: 100%;  
     background-color: rgba(217, 217, 217, 0.44);
 
     display: flex;
@@ -193,7 +202,7 @@ main {
 }
 
 #content-title > div:not(#content-title-title){
-    width: 650px;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -202,7 +211,7 @@ main {
 }
 
 #content-date > div:not(#content-date-title){
-    width: 135px;
+    width: 100%;
     background-color: rgba(217, 217, 217, 0.44);
 
     display: flex;
@@ -211,7 +220,7 @@ main {
 }
 
 #content-hits > div:not(#content-hits-title){
-    width: 110px;
+    width: 100%;
     background-color: rgba(217, 217, 217, 0.44);
 
     display: flex;
